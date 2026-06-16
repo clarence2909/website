@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zuri Nilotica — Premium African Skincare | Shea Butter, Refined</title>
-  <meta name="description" content="Discover Zuri Nilotica: luxury skincare rooted in African botanicals. Hand-harvested Nilotica shea butter, ethically sourced, minimally processed. Nature, refined.">
+  <title>Zuri Nilotica — Pure Nilotica Shea Butter from Uganda</title>
+  <meta name="description" content="Zuri Nilotica — cold-pressed shea butter harvested from wild Nilotica trees along Uganda's Nile basin. Untouched. Unrefined. Unapologetically natural.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="home">
@@ -35,13 +35,31 @@
   <section class="hero hero-home" aria-label="Introduction">
     <div class="hero-media"></div>
     <div class="hero-logo">Z</div>
-    <h1>Born from the African Earth.<br>Refined for Your Skin.</h1>
-    <p>Zuri Nilotica transforms hand-harvested botanicals from the African savannah into modern, luxury skincare — pure by origin, elevated by craft.</p>
+    <div class="hero-content">
+      <h1>Pure from the Source.<br>Refined for You.</h1>
+      <p class="hero-subheadline">Zuri Nilotica — cold-pressed shea butter harvested from the wild Nilotica trees along Uganda's Nile basin. Untouched. Unrefined. Unapologetically natural.</p>
+      <a class="pill-btn hero-cta" href="products.html">Discover the Collection</a>
+    </div>
   </section>
 
   <main class="home-page">
-    <section class="brand-section container" id="brands">
+    <section class="origin-section container reveal" aria-label="Our origin">
+      <div class="origin-grid">
+        <div class="origin-copy">
+          <p class="section-label">Our Origin</p>
+          <h2 class="section-heading">Born in Uganda. Carried by Tradition.</h2>
+          <p>Deep in the lush landscapes of northern Uganda, where the Nile flows quietly through ancient savannah, grows something extraordinary — the Nilotica shea tree. For generations, communities here have harvested its seeds by hand, pressing them slowly and carefully into one of nature's most potent butters.</p>
+          <p>Zuri Nilotica exists to bring that heritage to you — pure, traceable, and never compromised.</p>
+        </div>
+        <div class="origin-media" aria-hidden="true">
+          <img class="card-image" src="images/shea-nuts-closeup.png" alt="Raw shea nuts and golden shea butter" style="border-radius: var(--radius-lg);">
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-section container" id="brands" aria-label="The collection">
       <h2 class="section-heading center">The Collection</h2>
+      <p class="section-tagline center">Single-origin. Cold-pressed. Naturally yours.</p>
       <button class="brand-close" type="button" aria-label="Close product details">×</button>
       <div class="brand-carousel" aria-live="polite"></div>
       <div class="carousel-actions">
@@ -50,33 +68,38 @@
       </div>
     </section>
 
-    <section class="core-value container reveal">
-      <p>We are planet-conscious, human-centric, and beauty-obsessed. We don't add luxury to nature. We reveal the luxury already within it.</p>
-    </section>
-
-    <section class="approach-section container reveal">
-      <h2 class="section-heading">The Art of Less</h2>
-      <div class="approach-grid">
+    <section class="why-section container reveal" aria-label="Why Nilotica shea">
+      <h2 class="section-heading center">Why Nilotica Shea?</h2>
+      <div class="why-grid">
         <article>
           <h3>Origin</h3>
-          <p>Every ingredient begins its journey beneath the canopy of Africa's shea belt — wild-harvested from trees that have stood for generations.</p>
-          <p>We don't manufacture nature. We honour it.</p>
-        </article>
-        <article>
-          <h3>Craft</h3>
-          <p>Our shea butter is cold-pressed and hand-processed by women artisans using methods passed down through centuries.</p>
-          <p>Their knowledge is our most refined technology.</p>
+          <p>Sourced from Uganda's Nile belt, where the Nilotica variety grows exclusively. Softer, silkier, and richer than West African shea — it's nature's rarest butter.</p>
         </article>
         <article>
           <h3>Purity</h3>
-          <p>We intervene only where necessary. Our formulations preserve the natural vitamin and fatty acid profile of every ingredient.</p>
-          <p>So your skin receives what nature intended.</p>
+          <p>No additives. No bleaching. No refining. What leaves Uganda is exactly what arrives at your door — raw goodness, nothing more.</p>
+        </article>
+        <article>
+          <h3>Impact</h3>
+          <p>Every purchase supports the women harvesters and farming communities in northern Uganda who have tended these trees for centuries.</p>
+        </article>
+        <article>
+          <h3>Versatility</h3>
+          <p>From deep skin nourishment to hair moisture and scar healing — Nilotica shea does more with less. A little goes a long way.</p>
         </article>
       </div>
     </section>
 
-    <section class="testimonial-section reveal" aria-label="Philosophy">
+    <section class="ethics-section reveal" aria-label="Sustainability and ethics">
+      <div class="container ethics-inner">
+        <h2 class="section-heading">Rooted in Responsibility</h2>
+        <p class="large-copy">Zuri Nilotica is more than a skincare brand — it's a commitment. We work directly with Ugandan harvesters, pay fair wages, and champion sustainable wild-harvesting practices that protect the Nilotica tree for future generations. When you choose Zuri, you choose a product with a story worth telling.</p>
+      </div>
+    </section>
+
+    <section class="testimonial-section reveal" aria-label="Testimonials">
       <div class="container">
+        <p class="section-label center">What People Are Saying</p>
         <div class="testimonial-slider">
           <button class="circle-btn testimonial-prev" type="button" aria-label="Previous quote">‹</button>
           <blockquote>
@@ -87,39 +110,33 @@
         </div>
       </div>
     </section>
-
-    <section class="recent-news-section container reveal">
-      <h2 class="section-heading">From the Savannah</h2>
-      <div class="news-grid">
-        <article class="news-card">
-          <div class="placeholder-image green"></div>
-          <div class="news-content">
-            <p>The Nilotica Shea Tree — A Botanical Treasure of East Africa</p>
-            <a class="pill-btn" href="important-note.html">Read More</a>
-          </div>
-        </article>
-        <article class="news-card">
-          <div class="placeholder-image cream"></div>
-          <div class="news-content">
-            <p>Hand-Harvested, Sun-Dried, Cold-Pressed — Our Process</p>
-            <a class="pill-btn" href="important-note.html">Read More</a>
-          </div>
-        </article>
-        <article class="news-card">
-          <div class="placeholder-image pink"></div>
-          <div class="news-content">
-            <p>Partnership, Not Extraction — Working With Communities</p>
-            <a class="pill-btn" href="important-note.html">Read More</a>
-          </div>
-        </article>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-top">
         <a class="footer-wordmark" href="index.html">Zuri Nilotica</a>
+        <article class="news-card">
+          <img class="card-image" src="images/savannah-landscape.png" alt="Wild shea trees in the East African savannah" loading="lazy">
+          <div class="news-content">
+            <p>The Nilotica Shea Tree — A Botanical Treasure of East Africa</p>
+            <a class="pill-btn" href="important-note.html">Read More</a>
+          </div>
+        </article>
+        <article class="news-card">
+          <img class="card-image" src="images/shea-sun-drying.png" alt="Shea nuts drying on woven mats" loading="lazy">
+          <div class="news-content">
+            <p>Hand-Harvested, Sun-Dried, Cold-Pressed — Our Process</p>
+            <a class="pill-btn" href="important-note.html">Read More</a>
+          </div>
+        </article>
+        <article class="news-card">
+          <img class="card-image" src="images/shea-harvesting.png" alt="Women gathering shea nuts" loading="lazy">
+          <div class="news-content">
+            <p>Partnership, Not Extraction — Working With Communities</p>
+            <a class="pill-btn" href="important-note.html">Read More</a>
+          </div>
+        </article>
         <div class="footer-nav-wrap">
           <nav class="footer-nav" aria-label="Footer navigation">
             <a href="about.html">About</a>
@@ -131,10 +148,11 @@
           </div>
         </div>
       </div>
+      <p class="footer-tagline">Zuri Nilotica — Wild. Pure. Ugandan.</p>
       <div class="footer-bottom">
         <p>© 2026 Zuri Nilotica. All Rights Reserved.</p>
         <a href="important-note.html">Privacy Policy</a>
-        <p>Nairobi, Kenya · Serving Globally</p>
+        <p>Northern Uganda · Nile Basin</p>
       </div>
     </div>
   </footer>

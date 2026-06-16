@@ -22,7 +22,7 @@ const brands = [
     title: "CALM. REPAIR. GLOW.",
     copy: "A concentrated facial oil that pairs Nilotica shea oil with cold-pressed baobab seed oil — two of Africa's most nutrient-rich botanicals. Three drops, pressed gently into clean skin. That is all.",
     year: "2026",
-    bg: "linear-gradient(135deg, #2d5a3a, #1a3a2a 45%, #c8a456)",
+    bg: "linear-gradient(135deg, #00539C, #00539C 45%, #00539C)",
     panel: "#1a3a2a",
     color: "#f5f0e8"
   },
@@ -39,16 +39,16 @@ const brands = [
 
 const testimonials = [
   {
-    text: "We don't add luxury to nature. We reveal the luxury already within it.",
-    author: "Zuri Nilotica"
+    text: "I've never used anything that absorbs this quickly — and knowing it comes straight from Uganda makes it even more special.",
+    author: "Early Customer"
   },
   {
-    text: "The most extraordinary skincare ingredients already exist in nature — they simply need to be treated with respect.",
-    author: "Zuri Nilotica, Founding Principle"
+    text: "This is the first shea butter that actually feels like it came from the tree — rich, soft, and completely natural.",
+    author: "Skincare Enthusiast"
   },
   {
-    text: "When the source thrives, the product is honest. When the people are respected, the brand has integrity. There is no other way.",
-    author: "Zuri Nilotica, Sourcing Philosophy"
+    text: "Knowing my purchase supports the women who harvest it makes every application feel meaningful.",
+    author: "Conscious Buyer"
   }
 ];
 
@@ -105,7 +105,7 @@ function renderBrands() {
         <div class="brand-info-left">
           <h3>${brand.title}</h3>
           <p>${brand.copy}</p>
-          <a class="pill-btn brand-button" href="#">Visit Website</a>
+          <a class="pill-btn brand-button" href="products.html">Discover the Collection</a>
           <div class="brand-meta">
             <span>Year Of Investment:</span>
             <span>${brand.year}</span>
