@@ -1,54 +1,54 @@
 const brands = [
   {
-    name: "BYOMA",
-    title: "SCIENCE-BACKED, CLINICALLY-PROVEN SKIN BARRIER CARE",
-    copy: "With a mission to democratise and demystify beauty, every product is powered by barrier-first complexes that are clinically proven to deliver targeted results while protecting skin barrier health.",
-    year: "2025",
-    bg: "linear-gradient(135deg, #d8f48d, #86c675 48%, #eaf7c5)",
-    panel: "#d8f48d",
-    color: "#000"
+    name: "Pure Nilotica",
+    title: "THE ESSENTIAL. UNREFINED. UNMATCHED.",
+    copy: "Cold-pressed from the fruit of wild Vitellaria nilotica trees in East Africa, this is shea butter in its purest, most potent form. Softer and more absorbent than conventional shea, it melts on contact — delivering deep moisture without residue.",
+    year: "2026",
+    bg: "linear-gradient(135deg, #f5f0e8, #c8a456 48%, #e8dcc8)",
+    panel: "#f5f0e8",
+    color: "#1a3a2a"
   },
   {
-    name: "Ethique Beauty",
-    title: "Clean, Effective, and Ethical Solid Shampoos + Conditioners",
-    copy: "Concentrated, clean ingredients in solid bars, delivering results that are better for hair and the planet.",
-    year: "2020",
-    bg: "linear-gradient(135deg, #fbecd0, #dfa15b 48%, #f8d8c0)",
-    panel: "#f2d09c",
-    color: "#000"
+    name: "Body Crème",
+    title: "DEEP NOURISHMENT. WEIGHTLESS FINISH.",
+    copy: "A refined body crème built on a base of pure Nilotica shea butter, blended with cold-pressed marula oil and a whisper of raw African honey extract. It absorbs completely, leaving skin supple and quietly luminous.",
+    year: "2026",
+    bg: "linear-gradient(135deg, #e8dcc8, #8fa88b 48%, #d4c9b5)",
+    panel: "#e8dcc8",
+    color: "#1a3a2a"
   },
   {
-    name: "Eva NYC",
-    title: "A New Generation of Haircare",
-    copy: "Brooklyn-born hair products crafted to a higher standard with science-backed and responsibly sourced ingredients.",
-    year: "2022",
-    bg: "linear-gradient(135deg, #ffc4d0, #f07092 45%, #ffd8a9)",
-    panel: "#f5b7c8",
-    color: "#000"
+    name: "Facial Oil",
+    title: "CALM. REPAIR. GLOW.",
+    copy: "A concentrated facial oil that pairs Nilotica shea oil with cold-pressed baobab seed oil — two of Africa's most nutrient-rich botanicals. Three drops, pressed gently into clean skin. That is all.",
+    year: "2026",
+    bg: "linear-gradient(135deg, #2d5a3a, #1a3a2a 45%, #c8a456)",
+    panel: "#1a3a2a",
+    color: "#f5f0e8"
   },
   {
-    name: "amika",
-    title: "salon-raised haircare rooted in results for all",
-    copy: "A fearless haircare brand rooted in clinical results and formulas that nourish your skin, scalp, and strands.",
-    year: "2022",
-    bg: "linear-gradient(135deg, #bee1f7, #6989c8 50%, #f5d85f)",
-    panel: "#6d2d33",
-    color: "#bee1f7"
+    name: "Lip Treatment",
+    title: "SOFTNESS, DISTILLED.",
+    copy: "Pure Nilotica shea butter and a trace of cold-pressed coconut oil — nothing else. It coats the lips in a veil of moisture that lasts, repairs, and protects without wax, petroleum, or artificial texture.",
+    year: "2026",
+    bg: "linear-gradient(135deg, #c8a456, #a08540 50%, #f5f0e8)",
+    panel: "#c8a456",
+    color: "#1a3a2a"
   }
 ];
 
 const testimonials = [
   {
-    text: "Bansk Beauty leverages its capabilities and network to support brands in reaching the next level while celebrating their individuality.",
-    author: "Amanda Wallbrink, VP Consumer Private Equity at Bansk Group"
+    text: "We don't add luxury to nature. We reveal the luxury already within it.",
+    author: "Zuri Nilotica"
   },
   {
-    text: "Purpose-united teams collaborate seamlessly, conquer challenges resolutely, and innovate fearlessly.",
-    author: "Heather McGowan, Author & Futurist"
+    text: "The most extraordinary skincare ingredients already exist in nature — they simply need to be treated with respect.",
+    author: "Zuri Nilotica, Founding Principle"
   },
   {
-    text: "They have nurtured some of the best brands in beauty, crafting thriving communities essential to sustainable growth.",
-    author: "Conor Begley, Chief Strategy Officer and Co-founder at Creator IQ"
+    text: "When the source thrives, the product is honest. When the people are respected, the brand has integrity. There is no other way.",
+    author: "Zuri Nilotica, Sourcing Philosophy"
   }
 ];
 
