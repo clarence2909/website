@@ -214,3 +214,142 @@ if ("IntersectionObserver" in window) {
 } else {
   reveals.forEach((el) => el.classList.add("visible"));
 }
+function initParticles() {
+  const canvas = document.getElementById("hero-canvas");
+  if (!canvas) return;
+
+  const ctx = canvas.getContext("2d");
+
+  function resizeCanvas() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+
+  const NUM = window.innerWidth < 768 ? 30 : 50;
+
+  const particles = [];
+
+  let mouse = {
+    x: canvas.width / 2,
+    y: canvas.height / 2
+  };
+
+  document.addEventListener("mousemove", (e) => {
+    const rect = canvas.getBoundingClientRect();
+
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
+  });
+
+ const COLORS = [
+  { r: 0, g: 83, b: 156 },    // sapphire blue
+  { r: 64, g: 156, b: 255 },  // bright blue
+  { r: 173, g: 216, b: 255 }, // light blue
+  { r: 230, g: 245, b: 255 }, // icy blue
+  { r: 120, g: 190, b: 255 }  // soft sky blue
+];
+
+  for (let i = 0; i < NUM; i++) {
+    const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 2 + 0.5,
+      dx: (Math.random() - 0.5) * 0.25,
+      dy: (Math.random() - 0.5) * 0.2 - 0.05,
+      color,
+      alpha: Math.random() * 0.4 + 0.1,
+      pulse: Math.random() * Math.PI * 2,
+      pulseSpeed: Math.random() * 0.015 + 0.008,
+      glowSize: Math.random() * 6 + 3
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    particles.forEach((p) => {
+      p.pulse += p.pulseSpeed;
+
+      const alpha =
+        p.alpha +
+        Math.sin(p.pulse) * 0.12;
+
+      const dxMouse = mouse.x - p.x;
+      const dyMouse = mouse.y - p.y;
+
+      const dist = Math.sqrt(
+        dxMouse * dxMouse +
+        dyMouse * dyMouse
+      );
+
+      if (dist < 200) {
+        p.x += dxMouse * 0.0008;
+        p.y += dyMouse * 0.0008;
+      }
+
+      p.x += p.dx;
+      p.y += p.dy;
+
+      if (p.x < -10) p.x = canvas.width + 10;
+      if (p.x > canvas.width + 10) p.x = -10;
+      if (p.y < -10) p.y = canvas.height + 10;
+      if (p.y > canvas.height + 10) p.y = -10;
+
+      const gradient = ctx.createRadialGradient(
+        p.x,
+        p.y,
+        0,
+        p.x,
+        p.y,
+        p.glowSize
+      );
+
+      gradient.addColorStop(
+        0,
+        `rgba(${p.color.r},${p.color.g},${p.color.b},${alpha * 0.4})`
+      );
+
+      gradient.addColorStop(
+        1,
+        `rgba(${p.color.r},${p.color.g},${p.color.b},0)`
+      );
+
+      ctx.beginPath();
+      ctx.arc(
+        p.x,
+        p.y,
+        p.glowSize,
+        0,
+        Math.PI * 2
+      );
+
+      ctx.fillStyle = gradient;
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(
+        p.x,
+        p.y,
+        p.r,
+        0,
+        Math.PI * 2
+      );
+
+      ctx.fillStyle =
+        `rgba(${p.color.r},${p.color.g},${p.color.b},${alpha})`;
+
+      ctx.fill();
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+}
+
+initParticles();
